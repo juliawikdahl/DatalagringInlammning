@@ -1,0 +1,28 @@
+﻿<Application x:Class="Entityframework_Inlamning.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Entityframework_Inlamning"
+             xmlns:viewModel="clr-namespace:Entityframework_Inlamning.Models.ViewModel"
+             xmlns:view="clr-namespace:Entityframework_Inlamning.Views"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <DataTemplate DataType="{x:Type viewModel:CreateCustomerViewModel}">
+                <view:CreateCustomerView />
+            </DataTemplate>
+            
+            <DataTemplate DataType="{x:Type viewModel:GetCustomerViewModel}">
+                <view:GetCustomerView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:CreateErrandViewModel}">
+                <view:CreateErrandView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:GetErrandViewModel}">
+                <view:GetErrandView />
+             </DataTemplate>
+            
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

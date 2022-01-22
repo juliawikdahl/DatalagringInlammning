@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Entityframework_Inlamning.Views.CreateErrandView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Entityframework_Inlamning.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <StackPanel Margin="10,0,0,-180" >
+            <Label Content="Skapa ett ärende" Margin="10" FontSize="25" />
+            <Label Content="Email"/>
+            <TextBox x:Name="tbEmail" FontSize="18" Margin="0 10" Padding="10" />
+            <Label Content="Titel"/>
+            <TextBox x:Name="tbTitle" FontSize="18" Margin="0 10" Padding="10" />
+            <Label Content="Beskrivning"/>
+            <TextBox x:Name="tbDescription" Grid.Row="1" FontSize="18" Margin="0 10" Height="150" Padding="10" />
+           
+            <Button x:Name="ButtonSkapa" Grid.Row="1" Margin="5,5,5,5" Padding="5" FontSize="18" Content="skicka" Background="#FF918D78" Width="250" Height="40" Click="ButtonSkapa_Click_1"  />
+
+
+        </StackPanel>
+
+    </Grid>
+</UserControl>
